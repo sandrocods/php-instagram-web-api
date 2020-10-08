@@ -15,7 +15,7 @@ Savecookie('Username',$login);
 ### Example login using cookie
 ```php
 include 'Instagram_Web_API/InstagramFunc.php';
-$login_cookie = Logincookie('mayanasution4');
+$login_cookie = Logincookie('Username');
 $Geteditprofile = Geteditprofile($login_cookie);
 print_r($Geteditprofile);
 ```
