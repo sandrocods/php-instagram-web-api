@@ -12,6 +12,13 @@ U can save Cookie with
 ```php
 Savecookie('Username',$login);
 ```
+### Example login using cookie
+```php
+include 'Instagram_Web_API/InstagramFunc.php';
+$login_cookie = Logincookie('mayanasution4');
+$Geteditprofile = Geteditprofile($login_cookie);
+print_r($Geteditprofile);
+```
 ## Feature
 | Feature  | Available  |
 | ------------ | ------------ |
@@ -146,7 +153,6 @@ $Changeprofile = Changeprofile($cookie, $path_image);
 ```php
 $Removeprofilepicture = Removeprofilepicture($cookie);
 ```
-
 ### Savecookie
 ```php
 $Savecookie = Savecookie($username , $cookie);
