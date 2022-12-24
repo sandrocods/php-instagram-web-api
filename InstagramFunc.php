@@ -78,7 +78,7 @@ function Login($username, $password, $cookie)
 function InfoAccount($username, $cookie)
 {
     $InfoAccount = curl(
-        API.'/'.$username.'/?__a=1',
+        API.'/'.$username.'/?__a=1&__d=dis',
         'GET',
         null,
         null,
